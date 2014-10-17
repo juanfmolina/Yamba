@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Yamba</string>
+    <string name="app_name">Yamba1G10</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configuraciones</string>
     <string name="button_tweet">Tweet</string>
     <string name="hint_status">What\'s up?</string>
     <string name="first_tC">140</string>
+    <string name="username"> Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="username_summary">Ingrese su nombre de usuario</string>
+    <string name="password_summary">Ingrese su contraseña de usuario</string>
+    <string name="title_activity_main">Yamba1G10</string>
+    <string name="tweet">Twittear</string>
+    <string name="refresh">Actualizar</string>
+    <string name="purge">Limpiar</string>
 
 </resources>
