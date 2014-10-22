@@ -15,14 +15,14 @@ public class StatusActivity extends Activity {
 			getFragmentManager()
 					.beginTransaction()
 					.add(android.R.id.content, fragment,
-							fragment.getClass().getSimpleName()).commit();
+							fragment.getClass().getSimpleName()).commit(); //
 		}
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.status, menu);
-		return true;
+		getMenuInflater().inflate(R.menu.main, menu); //
+		return true; //
 	}
 }

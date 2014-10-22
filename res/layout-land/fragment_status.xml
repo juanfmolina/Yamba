@@ -40,7 +40,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editStatus"
         android:layout_alignTop="@+id/buttonTweet"
-        android:text="140"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>
