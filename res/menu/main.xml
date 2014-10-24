@@ -11,7 +11,7 @@
         android:showAsAction="always|withText"
         android:title="@string/tweet"/>
     <item
-        android:id="@+id/action_refresh"
+        android:id="@+id/itemServiceStart"
         android:icon="@android:drawable/ic_menu_rotate"
         android:showAsAction="always"
         android:title="@string/refresh"/>

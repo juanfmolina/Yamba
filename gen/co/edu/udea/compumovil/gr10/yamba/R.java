@@ -1094,7 +1094,6 @@ containing a value of this type.
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
         public static final int action_purge=0x7f060043;
-        public static final int action_refresh=0x7f060042;
         public static final int action_settings=0x7f060040;
         public static final int action_tweet=0x7f060041;
         public static final int activity_chooser_view_content=0x7f060025;
@@ -1118,6 +1117,8 @@ containing a value of this type.
         public static final int icon=0x7f06002a;
         public static final int ifRoom=0x7f06000a;
         public static final int image=0x7f060027;
+        public static final int itemPrefs=0x7f060044;
+        public static final int itemServiceStart=0x7f060042;
         public static final int listMode=0x7f060001;
         public static final int list_item=0x7f060029;
         public static final int middle=0x7f060012;
@@ -1208,7 +1209,8 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
-        public static final int status=0x7f0d0001;
+        public static final int menu=0x7f0d0001;
+        public static final int status=0x7f0d0002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

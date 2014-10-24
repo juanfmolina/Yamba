@@ -31,6 +31,9 @@ public class MainActivity extends Activity {
 		case R.id.action_tweet:
 			startActivity(new Intent(this, StatusActivity.class));
 			return true;
+		case R.id.itemServiceStart:
+			startService(new Intent(this, RefreshService.class));
+			return true;
 		default:
 			return false;
 		}
