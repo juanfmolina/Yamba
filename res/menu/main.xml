@@ -18,7 +18,9 @@
     <item
         android:id="@+id/action_purge"
         android:icon="@android:drawable/ic_menu_delete"
-        android:title="@string/purge">
-    </item>
-
+        android:title="@string/purge"/>
+    <item 
+        android:id="@+id/about_developers"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/developers"/>
 </menu>

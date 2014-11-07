@@ -20,5 +20,9 @@
     <string name="status">Nuevo Estado</string>
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="title_activity_status">StatusActivity</string>
+    <string name="developers">Desarrolladores</string>
+    <string name="title_activity_about">Acerca de</string>
+    <string name="acerca_de">Acerca de la Aplicación</string>
+    <string name="app_info">Desarrolladores: Santiago Gómez Piedrahita, Juan Fernando Molina Flórez. \n\n Esta aplicación se desarrolla para la asignatura Computación Móvil \n\n Facultad de Ingeniería \n\n Departamento Ingeniería de Sistemas \n\n Universidad de Antioquia</string>
 
 </resources>

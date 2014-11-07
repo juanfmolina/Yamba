@@ -34,6 +34,9 @@ public class MainActivity extends Activity {
 		case R.id.itemServiceStart:
 			startService(new Intent(this, RefreshService.class));
 			return true;
+		case R.id.about_developers:
+			startActivity(new Intent(this, About.class));
+			return true;
 		default:
 			return false;
 		}

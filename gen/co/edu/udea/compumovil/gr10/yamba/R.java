@@ -23,34 +23,45 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int twitter=0x7f020001;
-        public static final int twitter2=0x7f020002;
+        public static final int logoudea=0x7f020001;
+        public static final int twitter=0x7f020002;
+        public static final int twitter2=0x7f020003;
     }
     public static final class id {
-        public static final int action_purge=0x7f090006;
-        public static final int action_settings=0x7f090003;
-        public static final int action_tweet=0x7f090004;
-        public static final int buttonTweet=0x7f090001;
-        public static final int editStatus=0x7f090000;
-        public static final int itemServiceStart=0x7f090005;
-        public static final int textCount=0x7f090002;
+        public static final int LinearLayout1=0x7f090000;
+        public static final int about_developers=0x7f09000b;
+        public static final int action_purge=0x7f09000a;
+        public static final int action_settings=0x7f090007;
+        public static final int action_tweet=0x7f090008;
+        public static final int buttonTweet=0x7f090005;
+        public static final int editStatus=0x7f090004;
+        public static final int imageView1=0x7f090002;
+        public static final int itemServiceStart=0x7f090009;
+        public static final int textCount=0x7f090006;
+        public static final int textView1=0x7f090001;
+        public static final int textView2=0x7f090003;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_settings=0x7f030001;
-        public static final int activity_status=0x7f030002;
-        public static final int fragment_status=0x7f030003;
+        public static final int activity_about=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_settings=0x7f030002;
+        public static final int activity_status=0x7f030003;
+        public static final int fragment_status=0x7f030004;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
-        public static final int settings=0x7f080001;
-        public static final int status=0x7f080002;
+        public static final int about=0x7f080000;
+        public static final int main=0x7f080001;
+        public static final int settings=0x7f080002;
+        public static final int status=0x7f080003;
     }
     public static final class string {
+        public static final int acerca_de=0x7f060015;
         public static final int action_settings=0x7f060002;
         public static final int apiRoot=0x7f06000a;
+        public static final int app_info=0x7f060016;
         public static final int app_name=0x7f060000;
         public static final int button_tweet=0x7f060003;
+        public static final int developers=0x7f060013;
         public static final int first_tC=0x7f060005;
         public static final int hello_world=0x7f060001;
         public static final int hint_status=0x7f060004;
@@ -61,6 +72,7 @@ public final class R {
         public static final int summaryApiRoot=0x7f06000b;
         public static final int summaryPassword=0x7f060009;
         public static final int summaryUsername=0x7f060007;
+        public static final int title_activity_about=0x7f060014;
         public static final int title_activity_main=0x7f06000c;
         public static final int title_activity_settings=0x7f060011;
         public static final int title_activity_status=0x7f060012;

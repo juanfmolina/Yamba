@@ -14,5 +14,4 @@
         android:key="apiRoot"
         android:summary="@string/summaryApiRoot"
         android:title="@string/apiRoot" />
-
 </PreferenceScreen>
