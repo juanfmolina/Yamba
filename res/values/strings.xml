@@ -17,6 +17,8 @@
     <string name="tweet">Twittear</string>
     <string name="refresh">Actualizar</string>
     <string name="purge">Eliminar</string>
-    <string name ="status">Nuevo Estado</string>
+    <string name="status">Nuevo Estado</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_status">StatusActivity</string>
 
 </resources>
