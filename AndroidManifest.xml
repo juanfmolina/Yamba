@@ -15,11 +15,23 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name=".StatusActivity"
+            android:label="@string/status_update" >
+            <intent-filter>
+                <action android:name="co.edu.ude.compumovil.gr10.yamba.action.tweet" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <provider
             android:name=".StatusProvider"
             android:authorities="co.edu.udea.compumovil.gr10.yamba.StatusProvider"
             android:exported="false" />
 
+        <activity android:name=".DetailsActivity" >
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -32,10 +44,6 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" >
-        </activity>
-        <activity
-            android:name=".StatusActivity"
-            android:label="@string/title_activity_status" >
         </activity>
 
         <service android:name=".RefreshService" />

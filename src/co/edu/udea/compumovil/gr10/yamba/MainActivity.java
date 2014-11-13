@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	@Override
@@ -36,6 +37,12 @@ public class MainActivity extends Activity {
 			return true;
 		case R.id.about_developers:
 			startActivity(new Intent(this, About.class));
+			return true;
+		case R.id.action_purge:
+			int rows = getContentResolver().delete(
+					StatusContract.CONTENT_URI, null, null);
+			Toast.makeText(this, "Deleted "+rows+" rows",
+					Toast.LENGTH_LONG).show();
 			return true;
 		default:
 			return false;
