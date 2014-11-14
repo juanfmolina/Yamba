@@ -8,7 +8,6 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.SimpleCursorAdapter.ViewBinder;
@@ -24,8 +23,7 @@ public class TimelineFragment extends ListFragment implements
 			StatusContract.Column.MESSAGE, StatusContract.Column.CREATED_AT,
 			StatusContract.Column.CREATED_AT };
 	private static final int[] TO = { R.id.list_item_text_user,
-			R.id.list_item_text_message, R.id.list_item_text_created_at,
-			R.id.list_item_freshness };
+			R.id.list_item_text_message, R.id.list_item_text_created_at, };
 	private static final int LOADER_ID = 42;
 	private SimpleCursorAdapter mAdapter;
 	private static final ViewBinder VIEW_BINDER = new ViewBinder() {
@@ -39,10 +37,6 @@ public class TimelineFragment extends ListFragment implements
 				CharSequence relTime = DateUtils
 						.getRelativeTimeSpanString(timestamp);
 				((TextView) view).setText(relTime);
-				return true;
-			case R.id.list_item_freshness:
-				timestamp = cursor.getLong(columnIndex);
-				((FreshnessView) view).setTimestamp(timestamp);
 				return true;
 			default:
 				return false;

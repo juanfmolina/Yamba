@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".StatusActivity"
-            android:label="@string/status_update" >
+            android:label="@string/status" >
             <intent-filter>
                 <action android:name="co.edu.ude.compumovil.gr10.yamba.action.tweet" />
 
