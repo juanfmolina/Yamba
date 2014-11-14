@@ -6,7 +6,6 @@ import android.app.IntentService;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
@@ -60,7 +59,7 @@ public class RefreshService extends IntentService {
 		YambaClient cloud = new YambaClient(username, password);
 
 		try {
-			int count = 0;
+			
 			List<Status> timeline = cloud.getTimeline(20);
 			for (Status status : timeline) {
 				values.clear();
@@ -72,7 +71,7 @@ public class RefreshService extends IntentService {
 				Uri uri = getContentResolver().insert(
 						StatusContract.CONTENT_URI, values); //
 				if (uri != null) {
-					count++;
+					
 					//
 					Log.d(TAG,
 							String.format("%s: %s", status.getUser(),

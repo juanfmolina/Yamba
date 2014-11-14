@@ -1,6 +1,7 @@
 package co.edu.udea.compumovil.gr10.yamba;
 
 import android.app.Fragment;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -27,11 +28,16 @@ public class StatusFragment extends Fragment implements OnClickListener {
 	private EditText editStatus;
 	private Button buttonTweet;
 	private TextView textCount;
+	private ProgressDialog progressDialog;
 	private int defaultTextColor;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+		progressDialog= new ProgressDialog(getActivity());
+		progressDialog.setMessage("Actualizando su estado...");
+		progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+		progressDialog.setIndeterminate(true);
 		View view = inflater
 				.inflate(R.layout.fragment_status, container, false);
 		editStatus = (EditText) view.findViewById(R.id.editStatus);
@@ -72,6 +78,12 @@ public class StatusFragment extends Fragment implements OnClickListener {
 	}
 
 	private final class PostTask extends AsyncTask<String, Void, String> {
+		
+		@Override
+		protected void onPreExecute() {
+			progressDialog.show();
+		};
+		
 		@Override
 		protected String doInBackground(String... params) {
 			try {
@@ -91,6 +103,7 @@ public class StatusFragment extends Fragment implements OnClickListener {
 				YambaClient cloud = new YambaClient(username, password);
 				//
 				cloud.postStatus(params[0]);
+				publishProgress();
 				return "Ha actualizado su estado correctamente";
 			} catch (YambaClientException e) {
 				e.printStackTrace();
@@ -100,8 +113,12 @@ public class StatusFragment extends Fragment implements OnClickListener {
 			
 		}
 
+
 		@Override
 		protected void onPostExecute(String result) {
+			 if (progressDialog.isShowing()) {
+		           progressDialog.dismiss();
+		        }
 			super.onPostExecute(result);
 			Toast.makeText(StatusFragment.this.getActivity(), result,
 					Toast.LENGTH_LONG).show();
