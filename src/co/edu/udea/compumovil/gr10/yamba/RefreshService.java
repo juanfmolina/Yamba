@@ -59,7 +59,7 @@ public class RefreshService extends IntentService {
 		YambaClient cloud = new YambaClient(username, password);
 
 		try {
-			
+			int count = 0; //
 			List<Status> timeline = cloud.getTimeline(20);
 			for (Status status : timeline) {
 				values.clear();
@@ -69,17 +69,20 @@ public class RefreshService extends IntentService {
 				values.put(StatusContract.Column.CREATED_AT, status
 						.getCreatedAt().getTime());
 				Uri uri = getContentResolver().insert(
-						StatusContract.CONTENT_URI, values); //
+						StatusContract.CONTENT_URI, values);
 				if (uri != null) {
-					
-					//
+					count++; //
 					Log.d(TAG,
 							String.format("%s: %s", status.getUser(),
 									status.getMessage()));
 				}
-
 			}
-		} catch (YambaClientException e) { //
+			if (count > 0) {
+				sendBroadcast(new Intent(
+						"com.marakana.android.yamba.action.NEW_STATUSES")
+						.putExtra("count", count)); //
+			}
+		} catch (YambaClientException e) {
 			Log.e(TAG, "Failed to fetch the timeline", e);
 			e.printStackTrace();
 		}
