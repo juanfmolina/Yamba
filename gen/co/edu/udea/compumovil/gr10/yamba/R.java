@@ -78,6 +78,8 @@ public final class R {
         public static final int password=0x7f060008;
         public static final int purge=0x7f06000f;
         public static final int refresh=0x7f06000e;
+        public static final int refresh_interval=0x7f060018;
+        public static final int refresh_interval_summary=0x7f060019;
         public static final int status=0x7f060010;
         public static final int status_update=0x7f060017;
         public static final int summaryApiRoot=0x7f06000b;

@@ -9,7 +9,7 @@
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -25,9 +25,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <receiver android:name="co.edu.udea.compumovil.gr10.yamba.BootReceiver">
+
+        <receiver android:name="co.edu.udea.compumovil.gr10.yamba.BootReceiver" >
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="co.edu.udea.compumovil.gr10.yamba.NotificationReceiver" >
+            <intent-filter>
+                <action android:name="com.marakana.android.yamba.action.NEW_STATUSES" />
             </intent-filter>
         </receiver>
 

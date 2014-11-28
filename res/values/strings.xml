@@ -25,5 +25,7 @@
     <string name="acerca_de">Acerca de la Aplicación</string>
     <string name="app_info">Desarrolladores: Santiago Gómez Piedrahita, Juan Fernando Molina Flórez. \n\n Esta aplicación se desarrolla para la asignatura Computación Móvil \n\n Facultad de Ingeniería \n\n Departamento Ingeniería de Sistemas \n\n Universidad de Antioquia</string>
     <string name="status_update">Timeline</string>
+    <string name="refresh_interval">Intervalo de Actualización</string>
+    <string name="refresh_interval_summary">Intervalo en minutos de actualización</string>
 
 </resources>

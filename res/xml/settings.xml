@@ -14,4 +14,5 @@
         android:key="apiRoot"
         android:summary="@string/summaryApiRoot"
         android:title="@string/apiRoot" />
+    <EditTextPreference android:title="@string/refresh_interval" android:key="interval" android:summary="@string/refresh_interval_summary"/>
 </PreferenceScreen>
