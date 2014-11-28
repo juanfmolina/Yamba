@@ -25,7 +25,7 @@ public class SettingsFragment extends PreferenceFragment implements
 
 	@Override
 	public void onSharedPreferenceChanged(SharedPreferences arg0, String arg1) {
-		// TODO Auto-generated method stub
+
 		
 	}
 }

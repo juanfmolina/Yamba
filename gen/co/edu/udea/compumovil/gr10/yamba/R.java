@@ -57,6 +57,7 @@ public final class R {
         public static final int activity_status=0x7f030003;
         public static final int fragment_status=0x7f030004;
         public static final int list_item=0x7f030005;
+        public static final int widget=0x7f030006;
     }
     public static final class menu {
         public static final int about=0x7f080000;
@@ -122,5 +123,6 @@ public final class R {
     }
     public static final class xml {
         public static final int settings=0x7f040000;
+        public static final int yamba_widget=0x7f040001;
     }
 }

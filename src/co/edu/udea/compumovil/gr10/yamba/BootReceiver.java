@@ -11,14 +11,16 @@ import android.util.Log;
 
 public class BootReceiver extends BroadcastReceiver { //
 	private static final String TAG = BootReceiver.class.getSimpleName();
-	private static final long DEFAULT_INTERVAL = AlarmManager.INTERVAL_FIFTEEN_MINUTES; //
+	private static final long DEFAULT_INTERVAL = 20000; //
 
 	@Override
 	public void onReceive(Context context, Intent intent) { //
 		SharedPreferences prefs = PreferenceManager
 				.getDefaultSharedPreferences(context);
+		
 		long interval = Long.parseLong(prefs.getString("interval",
 				Long.toString(DEFAULT_INTERVAL))); //
+		Log.d(TAG, "Intervalo "+ interval);
 		PendingIntent operation = PendingIntent.getService(context, -1,
 				new Intent(context, RefreshService.class),
 				PendingIntent.FLAG_UPDATE_CURRENT); //
